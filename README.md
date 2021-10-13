@@ -65,3 +65,14 @@ layer.open({
         layer.closeAll();
     });
 })()
+
+# layer.confirm
+layer.confirm('你确定要进行此操作吗?', {
+    btn: ['确定', '关闭'],
+    yes: function () {
+
+    },
+    btn2: function () {
+
+    }
+});
