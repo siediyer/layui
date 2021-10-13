@@ -47,3 +47,21 @@ layer.msg('灵活运用offset', {
 # layer.alert
 //信息框-例1
 layer.alert('见到你真的很高兴', {icon: 6});
+
+# layer.open
+layer.open({
+    type: 1,
+    title: '查看',
+    shadeClose: true,
+    shade: 0.8,
+    content: '<video  autoplay  width="320" height="80" controls><source src="'+voice+'" ></video>'
+}); 
+
+# layer.closeAll
+(function(){
+    Wind.use('layer');
+
+    layer.msg("操作失败", {}, function () {
+        layer.closeAll();
+    });
+})()
